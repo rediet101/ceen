@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function VitamincDetailPage() {
   return (
@@ -8,40 +9,7 @@ export default function VitamincDetailPage() {
       className="bg-cover bg-center"
       style={{ backgroundImage: "url('/bg.svg')" }}
     >
-      {/* Navbar */}
-      <nav className="flex items-center justify-between px-10 py-8">
-        {/* Logo */}
-        <div className="flex items-center h-10 ml-4 mt-3">
-          <img src="/logo.svg" />{" "}
-        </div>
-        {/* Nav Links */}
-        <div className="space-x-10 mr-10">
-          <Link
-            href="/"
-            className="text-black hover:underline hover:decoration-pink-500"
-          >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className="text-black hover:underline hover:decoration-pink-500"
-          >
-            About Us
-          </Link>
-          <Link
-            href="/product"
-            className="text-black hover:underline hover:decoration-pink-500"
-          >
-            Products
-          </Link>
-          <Link
-            href="/contact"
-            className="text-black hover:underline hover:decoration-pink-500"
-          >
-            Contact
-          </Link>
-        </div>
-      </nav>
+     <Navbar/>
 
       <main className="w-full bg-[#fff8fa] overflow-hidden">
         {/* Product Header */}

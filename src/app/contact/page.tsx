@@ -88,11 +88,15 @@ export default function ContactPage() {
 
         {/* Right Side - Map */}
         <div className="relative rounded-tr-[70px] rounded-br-[70px] overflow-hidden h-full">
-          <iframe
-            src="https://www.google.com/maps?q=Kebon+Kacang&output=embed"
-            className="w-full h-full min-h-[500px] grayscale contrast-125"
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7933.104523834324!2d106.81089004144118!3d-6.190614308879753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f69dbf3077c5%3A0x617afe28c3769a0f!2sKebon%20Kacang%2C%20Tanah%20Abang%2C%20Central%20Jakarta%20City%2C%20Jakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1748005601984!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            className="min-h-[500px] rounded-xl"
           ></iframe>
         </div>
       </section>
